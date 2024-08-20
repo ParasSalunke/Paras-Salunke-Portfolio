@@ -1,0 +1,46 @@
+/* for light mode  */
+:root {
+    --body_background: white;
+    --body_color: black;
+    --link_color: black;
+    --link_filter: brightness(1) invert(1);
+    --skill_line: rgba(0, 0, 0, 0.094);
+}
+
+/* for dark mode */
+[data-theme="dark"] {
+    --body_background: #161513;
+    --body_color: white;
+    --link_color: white;
+    --link_filter: none;
+    --skill_line: rgba(255, 255, 255, 0.1);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'outfit';
+    height: 100vh;
+    background-color: var(--body_background);
+    color: var(--body_color);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}

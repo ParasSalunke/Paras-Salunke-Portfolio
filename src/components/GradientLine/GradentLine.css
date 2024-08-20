@@ -1,0 +1,20 @@
+.gradient-line {
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(270deg, #DF8988 10%, #B415FF 100%);
+    animation: open-close-animation 3s infinite;
+    margin-top: 5px;
+    opacity: 1;
+}
+
+@keyframes open-close-animation {
+    0%, 100% {
+        width: 0;
+        opacity: 0;
+    }
+    50% {
+        width: 100%;
+        opacity: 1;
+    }
+}

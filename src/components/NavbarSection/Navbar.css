@@ -1,0 +1,148 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 100;
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 16px;
+    margin: auto;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    transition: 0.5s;
+    margin-right: 120px;
+    margin-left: 50px;
+    filter: var(--link_filter);
+}
+
+.logo:hover {
+    transform: scale(1.12);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.nav-menu p {
+    text-align: center;
+}
+
+.nav-connect {
+    margin-right: 20px;
+}
+
+.mode-button {
+    margin-right: 50px;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-menu li:hover {
+    transform: scale(1.12);
+    transition: 0.5s;
+    background: linear-gradient(270deg, #DF8988 10%, #B415FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-menu li.active {
+    background: linear-gradient(270deg, #DF8988 10%, #B415FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: var(--link_color);
+}
+
+.nav-mob-close {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-mob-open {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+}
+
+@media(max-width:768px) {
+    .navbar {
+        margin: 0px 5px;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .mode-button {
+        padding: 0px 20px 0px;
+    }
+
+    .logo {
+        padding-left: 10px;
+        margin: 0;
+        filter: var(--link_filter);
+    }
+
+    .nav-mob-open {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 80%;
+        width: 30px;
+    }
+
+    .navbar ul {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: rgba(51, 32, 46, 0.8);
+        width: 300px;
+        height: 700px;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -300px;
+        padding-top: 200px;
+    }
+
+    .nav-menu li {
+        font-size: 22px;
+        padding-left: 50px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
