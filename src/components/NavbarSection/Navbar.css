@@ -86,6 +86,7 @@
 }
 
 .nav-mob-open {
+    color: var(--link_color);
     display: none;
     cursor: pointer;
     width: 40px;
