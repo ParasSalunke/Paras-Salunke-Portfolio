@@ -125,6 +125,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
 const Contact = () => {
     const mapRef = useRef(null);
@@ -142,8 +145,19 @@ const Contact = () => {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(mapRef.current);
 
-        // Add a marker
-        L.marker([18.524761, 73.780566]).addTo(mapRef.current)
+        // Define custom icon
+        const customIcon = L.icon({
+            iconUrl: markerIcon,
+            iconRetinaUrl: markerIcon2x,
+            shadowUrl: markerShadow,
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+
+        // Add a marker with the custom icon
+        L.marker([18.524761, 73.780566], { icon: customIcon }).addTo(mapRef.current)
             .bindPopup('Pune, Maharashtra')
             .openPopup();
     }, []);
