@@ -5,6 +5,10 @@ import certificate4 from '../assets/images/Certificate/certificate4.jpg'
 import certificate5 from '../assets/images/Certificate/certificate5.jpg'
 import certificate6 from '../assets/images/Certificate/certificate6.jpg'
 import certificate7 from '../assets/images/Certificate/certificate7.jpg'
+import certificate8 from '../assets/images/Certificate/certificate8.jpg'
+import certificate9 from '../assets/images/Certificate/certificate9.jpg'
+
+
 
 const certificate_data = [
     {
@@ -54,6 +58,20 @@ const certificate_data = [
         c_title: "Certificate",
         c_desc: "Certificate for complection of Python 3.4.3 Training from IIT Bombay",
         c_img: certificate7,
+        c_linkedin: "https://www.linkedin.com/in/salunkeparasofficial/details/certifications",
+    },
+    {
+        c_no: 8,
+        c_title: "Certificate",
+        c_desc: "Certificate for complection of C Programming Training from IIT Bombay",
+        c_img: certificate8,
+        c_linkedin: "https://www.linkedin.com/in/salunkeparasofficial/details/certifications",
+    },
+    {
+        c_no: 9,
+        c_title: "Certificate",
+        c_desc: "Certificate for complection of GhatCPT & AI Tools Workshop from Be10x",
+        c_img: certificate9,
         c_linkedin: "https://www.linkedin.com/in/salunkeparasofficial/details/certifications",
     },
 ]
