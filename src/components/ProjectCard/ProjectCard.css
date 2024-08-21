@@ -1,0 +1,119 @@
+.project-card {
+  position: relative;
+  width: 350px;
+  cursor: pointer;
+  aspect-ratio: 16/9;
+  background-color: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button-icon {
+  height: 17px;
+  width: 17px;
+  fill: #333;
+  margin-right: 8px;
+}
+
+.project-card-image {
+  width: 100%;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  border: 3px solid #ff00ff;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.project-card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover .project-card-content {
+  transform: rotateX(0deg);
+}
+
+.project-card-title {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.project-card-description {
+  font-family: "Outfit";
+  margin: 10px 0 10px;
+  font-size: 18px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.project-card-technologies {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.project-card-technology {
+  font-size: 24px;
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 9px;
+}
+
+.button-container a {
+  font-size: 1rem;
+  font-family: "Outfit";
+  text-decoration: none;
+}
+
+.project-card-button {
+  padding: 15px;
+  border-radius: 8px;
+  background: #a9a9a9;
+  border: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.project-card-button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.secondary {
+  background: transparent;
+  color: #777;
+  border: 1px solid #777;
+  transition: all 0.3s ease;
+}
+
+.secondary:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}

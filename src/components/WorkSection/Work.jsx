@@ -3,6 +3,7 @@ import './Work.css';
 import { FaArrowRight } from "react-icons/fa";
 import work_data from '../../assets/work_data';
 import GradientLine from '../GradientLine/GradientLine';
+import ProjectCard from '../ProjectCard/ProjectCard';
 
 const Work = () => {
   const [showMore, setShowMore] = useState(false);
@@ -20,9 +21,15 @@ const Work = () => {
       <div className="work-container">
         {work_data.slice(0, showMore ? work_data.length : 6).map((work, index) => {
           return (
-            <a key={index} href={work.w_link} target="_blank" rel="noopener noreferrer">
-              <img src={work.w_img} alt='projects' />
-            </a>
+            <ProjectCard
+              key={index}
+              image={work.w_img}
+              title={work.w_title}
+              description={work.w_desc}
+              technologies={work.w_technologies}
+              liveDemoLink={work.w_live}
+              sourceCodeLink={work.w_github}
+            />
           );
         })}
       </div>

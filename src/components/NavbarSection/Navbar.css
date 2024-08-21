@@ -81,6 +81,7 @@
 }
 
 .nav-mob-close {
+    color: var(--link_color);
     display: none;
     cursor: pointer;
 }
@@ -123,6 +124,11 @@
         top: 20px;
         right: 80%;
         width: 30px;
+    }
+
+    .anchor-link {
+        text-decoration: none;
+        color: white;
     }
 
     .navbar ul {
