@@ -87,6 +87,9 @@ const Navbar = () => {
         <li onClick={() => handleMenuClick("portfolio")} className={activeMenu === "portfolio" ? "active" : ""}>
           <AnchorLink className='anchor-link' offset={50} href="#portfolio"><p>Portfolio</p></AnchorLink>
         </li>
+        <li onClick={() => handleMenuClick("certificate")} className={activeMenu === "certificate" ? "active" : ""}>
+          <AnchorLink className='anchor-link' offset={50} href="#certificate"><p>Certificates</p></AnchorLink>
+        </li>
         <li onClick={() => handleMenuClick("work")} className={activeMenu === "work" ? "active" : ""}>
           <AnchorLink className='anchor-link' offset={50} href="#work"><p>Projects</p></AnchorLink>
         </li>
