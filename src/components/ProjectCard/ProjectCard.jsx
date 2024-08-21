@@ -1,6 +1,7 @@
 import './ProjectCard.css';
-import { FaExternalLinkAlt, FaGithub, FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap } from 'react-icons/fa';
+import { FaGithub, FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap } from 'react-icons/fa';
 import { RiTailwindCssFill } from "react-icons/ri";
+import { FaLink } from "react-icons/fa6";
 import PropTypes from 'prop-types';
 
 const ProjectCard = ({ image, title, description, liveDemoLink, sourceCodeLink, technologies = [] }) => {
@@ -38,10 +39,10 @@ const ProjectCard = ({ image, title, description, liveDemoLink, sourceCodeLink, 
                 </div>
                 <div className="button-container">
                     <a href={liveDemoLink} target="_blank" rel="noopener noreferrer" className="project-card-button">
-                        <FaExternalLinkAlt className="button-icon" /> Live Demo
+                        <FaLink className="button-icon" size={20} /> Live Demo
                     </a>
                     <a href={sourceCodeLink} target="_blank" rel="noopener noreferrer" className="project-card-button secondary">
-                        <FaGithub className="button-icon" /> Source Code
+                        <FaGithub className="button-icon" size={20} /> Source Code
                     </a>
                 </div>
             </div>
