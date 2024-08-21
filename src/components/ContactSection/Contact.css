@@ -100,24 +100,6 @@
     box-sizing: border-box;
 }
 
-.contact-submit {
-    border: none;
-    color: white;
-    border-radius: 50px;
-    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
-    font-size: 18px;
-    padding: 18px 40px;
-    margin-bottom: 50px;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-submit:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
 @media(max-width:768px) {
     .contact {
         gap: 40px;

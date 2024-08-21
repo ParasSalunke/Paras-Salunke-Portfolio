@@ -1,0 +1,59 @@
+.send-message-button {
+    font-family: inherit;
+    font-size: 20px;
+    background: linear-gradient(270deg, #DF8988 10%, #B415FF 100%);
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-message-button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.send-message-button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.send-message-button:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.send-message-button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.send-message-button:hover svg {
+    transform: translateX(3em) rotate(45deg) scale(1.1);
+}
+
+.send-message-button:hover span {
+    transform: translateX(8em);
+}
+
+.send-message-button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
