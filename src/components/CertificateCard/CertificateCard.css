@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  perspective: 1000px;
   transition: 0.4s;
 }
 
@@ -143,8 +144,8 @@
   transition: 0.3s;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .certificate-card {
     margin: 0 auto;
   }
-}
+} */

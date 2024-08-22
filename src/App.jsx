@@ -12,8 +12,8 @@ import Work from "./components/WorkSection/Work"
 
 const App = () => {
   return (
+    
     <div>
-      <BackToTopButton />
       <Navbar />
       <Hero />
       <About />
@@ -22,6 +22,7 @@ const App = () => {
       <Work />
       <Contact />
       <Footer />
+      <BackToTopButton />
     </div>
   )
 }

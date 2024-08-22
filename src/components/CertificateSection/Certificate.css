@@ -49,13 +49,12 @@
     .certificate {
         gap: 50px;
         margin: 50px 6%;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .certificate-container {
         grid-template-columns: 1fr;
         gap: 20px;
-        width: 100%;
         margin: 0 auto;
     }
 

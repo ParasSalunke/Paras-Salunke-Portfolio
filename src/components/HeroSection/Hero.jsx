@@ -1,6 +1,6 @@
 import './Hero.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import profile from '../../assets/images/Hero/hero.png';
+import profile from '../../assets/images/Hero/hero_img_1.png';
 import Connect from '../ConnectButton/Connect';
 import Resume from '../ResumeButton/Resume';
 import SocialMedia from '../SocialMediaButtons/SocialMedia';

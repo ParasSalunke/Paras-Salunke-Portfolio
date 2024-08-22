@@ -1,5 +1,5 @@
 import './About.css'
-import profile from '../../assets/images/About/about.svg'
+import profile from '../../assets/images/About/about_img.png'
 import GradientLine from '../GradientLine/GradientLine'
 import Skills from '../SkillsComponent/Skills'
 
@@ -12,7 +12,7 @@ const About = () => {
             </div>
             <div className="about-sections">
                 <div className="about-left">
-                    <img src={profile} alt='Paras Salunke About' />
+                    <img src={profile} alt='Paras Salunke About Image' />
                 </div>
                 <div className="about-right">
                     <div className="about-para">

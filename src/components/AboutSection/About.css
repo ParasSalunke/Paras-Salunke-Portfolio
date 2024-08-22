@@ -19,7 +19,7 @@
 
 .about-left img {
     width: 300px;
-    border-radius: 10px;
+    border-radius: 15px;
     transition: 0.5s;
     cursor: pointer;
 }

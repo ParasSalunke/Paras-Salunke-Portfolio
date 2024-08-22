@@ -48,7 +48,8 @@
 }
 
 .mode-button {
-    margin-right: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .nav-menu li {
@@ -77,11 +78,12 @@
 
 .anchor-link {
     text-decoration: none;
+    display: flex;
     color: var(--link_color);
 }
 
 .nav-mob-close {
-    color: var(--link_color);
+    color: white;
     display: none;
     cursor: pointer;
 }
@@ -103,7 +105,7 @@
     }
 
     .mode-button {
-        padding: 0px 20px 0px;
+        padding: 0px 40px 0px;
     }
 
     .logo {

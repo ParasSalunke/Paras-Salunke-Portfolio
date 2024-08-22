@@ -82,7 +82,7 @@ const Navbar = () => {
           <AnchorLink className='anchor-link' href="#home"><p>Home</p></AnchorLink>
         </li>
         <li onClick={() => handleMenuClick("about")} className={activeMenu === "about" ? "active" : ""}>
-          <AnchorLink className='anchor-link' offset={50} href="#about"><p>About Me</p></AnchorLink>
+          <AnchorLink className='anchor-link' offset={50} href="#about"><p>About</p></AnchorLink>
         </li>
         <li onClick={() => handleMenuClick("portfolio")} className={activeMenu === "portfolio" ? "active" : ""}>
           <AnchorLink className='anchor-link' offset={50} href="#portfolio"><p>Portfolio</p></AnchorLink>
