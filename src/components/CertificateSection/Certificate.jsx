@@ -20,7 +20,7 @@ const Certificate = () => {
             </div>
 
             <div className="certificate-container">
-                {certificate_data.slice(0, showMore ? certificate_data.length : 3).map((certificate, index) => {
+                {certificate_data.slice(0, showMore ? certificate_data.length : 6).map((certificate, index) => {
                     return (
                         <CertificateCard
                             key={index}

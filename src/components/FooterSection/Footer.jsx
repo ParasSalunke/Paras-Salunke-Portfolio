@@ -28,10 +28,13 @@ const Footer = () => {
                                 <AnchorLink offset={50} className='anchor-link' href="#home">Home</AnchorLink>
                             </p>
                             <p>
-                                <AnchorLink offset={50} className='anchor-link' href="#about">About Me</AnchorLink>
+                                <AnchorLink offset={50} className='anchor-link' href="#about">About</AnchorLink>
                             </p>
                             <p>
                                 <AnchorLink offset={50} className='anchor-link' href="#portfolio">Portfolio</AnchorLink>
+                            </p>
+                            <p>
+                                <AnchorLink offset={50} className='anchor-link' href="#certificate">Certificates</AnchorLink>
                             </p>
                             <p>
                                 <AnchorLink offset={50} className='anchor-link' href="#work">Projects</AnchorLink>
