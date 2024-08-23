@@ -13,13 +13,11 @@ const MapComponent = () => {
             return; // If map is already initialized, do nothing
         }
 
-        // Initialize the map
-        mapRef.current = L.map('map').setView([18.524761, 73.780566], 13);
+        // Initialize the map with attributionControl set to false
+        mapRef.current = L.map('map', { attributionControl: false }).setView([18.524761, 73.780566], 13);
 
         // Add OpenStreetMap tiles
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(mapRef.current);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapRef.current);
 
         // Define custom icon
         const customIcon = L.icon({
