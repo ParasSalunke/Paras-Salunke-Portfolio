@@ -7,12 +7,10 @@ import Hero from "./components/HeroSection/Hero"
 import Navbar from "./components/NavbarSection/Navbar"
 import Portfolio from "./components/PortfolioSection/Portfolio"
 import Work from "./components/WorkSection/Work"
-// import Background from "./components/WebsiteBackground/Background"
-
 
 const App = () => {
   return (
-    
+
     <div>
       <Navbar />
       <Hero />
