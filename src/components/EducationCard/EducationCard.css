@@ -1,0 +1,31 @@
+.education-card {
+  width: 350px;
+  height: 200px;
+  background: #f7f9f9;
+  padding: 10px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.education-card-year {
+  color: #272C30;
+}
+
+.education-card-title {
+  color: #272C30;
+  font-size: 1.4em;
+  font-weight: 800;
+}
+
+.education-card-description {
+  color: #272C30;
+  font-weight: 500;
+}
+
+.education-card-grade {
+  color: #272C30;
+  font-weight: 500;
+}

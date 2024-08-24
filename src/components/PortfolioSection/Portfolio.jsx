@@ -1,7 +1,6 @@
 import './Portfolio.css';
 import GradientLine from '../GradientLine/GradientLine';
 import education_data from '../../assets/education_data';
-// import { FaArrowRight } from "react-icons/fa"; 
 
 const portfolio = () => {
   return (
@@ -11,21 +10,28 @@ const portfolio = () => {
         <GradientLine />
       </div>
       <div className="portfolio-container">
-        {education_data.map((education, index) => {
-          return <div key={index} className='portfolio-format'>
-            <h3>{education.s_no}</h3>
-            <h2>{education.s_name}</h2>
-            <p>{education.s_desc}</p>
-            <p>{education.s_grade}</p>
-            {/* <div className='portfolio-readmore'>
-              <p>Read More</p>
-              <FaArrowRight />
-             </div> */}
+        {education_data.map((education, index) => (
+          <div key={index} className='portfolio-format'>
+            <h3>{education.e_year}</h3>
+            <h2>{education.e_title}</h2>
+            <p>{education.e_description}</p>
+            <p>{education.e_grade}</p>
           </div>
-        })}
+        ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default portfolio
+export default portfolio;
+
+
+
+
+          // <EducationCard 
+          //   key={index}
+          //   year={education.e_year}
+          //   title={education.e_title}
+          //   description={education.e_description}
+          //   grade={education.e_grade}
+          // />
