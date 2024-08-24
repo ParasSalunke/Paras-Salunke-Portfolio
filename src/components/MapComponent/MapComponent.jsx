@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import './MapComponent.css'
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
@@ -36,7 +37,7 @@ const MapComponent = () => {
             .openPopup();
     }, []);
 
-    return <div id="map" style={{ width: '100%', height: '200px', borderRadius: '10px' }}></div>;
+    return <div id="map" className="map-container" ></div>;
 };
 
 export default MapComponent;
