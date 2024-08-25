@@ -1,7 +1,7 @@
 const Education_Data = [
     {
         e_year: "2023 — 2027",
-        e_title: "MIT ADT University, Pune",
+        e_title: "MIT ADT University, Pune Maharashtra",
         e_description: "Bachelor of Technology - BTech, Computer Science",
         e_grade: "CGPA: 8"
     },

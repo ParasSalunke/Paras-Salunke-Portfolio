@@ -12,6 +12,14 @@
     font-size: 25px;
 }
 
+.education-title {
+    font-size: 1.1rem;
+    background: linear-gradient(264deg, #df8908 -5.09%, #c649ff 106.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .portfolio-format {
     display: flex;
     flex-direction: column;
