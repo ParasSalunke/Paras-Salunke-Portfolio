@@ -8,6 +8,7 @@
 }
 
 .certificate-title h1 {
+    padding-top: 40px;
     color: var(--link_color);
     font-size: 25px;
 }
