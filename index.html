@@ -3,7 +3,15 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="./public/favicon.ico" />
+
+  <link rel="apple-touch-icon" sizes="152x152" href="/public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+  <link rel="manifest" href="/public/site.webmanifest">
+  <link rel="mask-icon" href="/public/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ff0000">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paras Salunke - Web Developer Portfolio</title>
 
@@ -38,25 +46,25 @@
     rel="stylesheet" />
 
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Paras Salunke",
-      "url": "https://www.parassalunke.me",
-      "sameAs": [
-        "https://www.linkedin.com/in/salunkeparasofficial",
-        "https://github.com/parassalunke",
-        "https://twitter.com/Paras__Salunke"
-      ],
-      "jobTitle": "Web Developer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Your Company"
-      },
-      "image": "https://i.imghippo.com/files/Jmkfw1724472513.png",
-      "description": "Paras Salunke's personal portfolio website showcasing projects, skills, and contact information."
-    }
-  </script>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Paras Salunke",
+        "url": "https://www.parassalunke.me",
+        "sameAs": [
+          "https://www.linkedin.com/in/salunkeparasofficial",
+          "https://github.com/parassalunke",
+          "https://twitter.com/Paras__Salunke"
+        ],
+        "jobTitle": "Web Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Your Company"
+        },
+        "image": "https://i.imghippo.com/files/Jmkfw1724472513.png",
+        "description": "Paras Salunke's personal portfolio website showcasing projects, skills, and contact information."
+      }
+    </script>
 </head>
 
 <body>
@@ -64,7 +72,7 @@
   <script type="module" src="/src/main.jsx"></script>
   <script>
     // Disable right-click context menu
-    document.addEventListener('contextmenu', function (event) {
+    document.addEventListener("contextmenu", function (event) {
       event.preventDefault();
     });
   </script>
